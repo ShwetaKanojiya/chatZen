@@ -5,7 +5,7 @@ const User = require("../models/userModel");
 //@description     Get or Search all users
 //@route           GET /api/user?search=
 //@access          Public
-/*const allUsers = asyncHandler(async (req, res) => {
+const allUsers = asyncHandler(async (req, res) => {
   const keyword = req.query.search
     ? {
         $or: [
@@ -82,5 +82,4 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-//module.exports = { allUsers, registerUser, authUser };
-module.exports = {  registerUser,authUser };
+module.exports = { allUsers, registerUser, authUser };
