@@ -23,22 +23,31 @@ function Homepage() {
   }, [history]);
 
   return (
-    <Container maxW="xl" centerContent>
+    <Container maxW={{ base: "sm", md: "lg", lg: "xl" }} centerContent>
       <Box
-        d="flex"
+        display="flex"
         justifyContent="center"
         p={3}
         bg="white"
         w="100%"
-        m="40px 0 15px 0"
+        mt={{ base: "20px", md: "30px", lg: "40px" }}
+        mb={{ base: "10px", md: "15px" }}
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
+        <Text fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }} fontFamily="Work sans"fontWeight="bold"
+          color="black"
+>
+          Chat-Zen
         </Text>
       </Box>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+      <Box
+        bg="white"
+        w="100%"
+        p={4}
+        borderRadius="lg"
+        borderWidth="1px"
+      >
         <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
             <Tab>Login</Tab>
