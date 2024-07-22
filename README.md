@@ -3,6 +3,11 @@
 
 Chat-Zen (Chatluxe) is a Full Stack Chatting App.
 Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
+
+### Responsive View
+
+![](https://github.com/ShwetaKanojiya/chatZen/blob/main/chatapp-signup.PNG)
+![](https://github.com/ShwetaKanojiya/chatZen/blob/main/chatapp-login.PNG)
 ## Tech Stack
 
 **Client:** React JS
